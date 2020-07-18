@@ -1,21 +1,7 @@
-// import { getAll } from '../actions/feriados.actions';
+
 
 import axios from 'axios';
 
-//failDESTRUCTURE
-// import { Axios: axios } from 'axios';
-
-/// WORKS
-// const { default: axios } = require('axios');
-
-//getUNDEF: 
-// import Axios from 'axios';
-// import { axios } from 'axios';
-// const { Axios: axios } =require( 'axios');
-
-//ERROR: const { default: Axios } = require('axios');
-//ERROR: const { axios } = require('axios');
-//ERROR: const {Axios: axios } = require('axios');
 
 // FIXME: move to ".env"
 const URL_BASE = "http://192.168.1.53:57016";
