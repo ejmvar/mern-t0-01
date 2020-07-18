@@ -1,4 +1,10 @@
+# STOPPED
+Cycled GetAll
+
+
 ## Frontend Structure
+
+
 
 ### Services
 
@@ -21,6 +27,8 @@
 ### Front
 
 ## TODO:
+
+TODO: – http-common.js initializes axios with HTTP base Url and headers.
 
 // FIXME: move to ".env"
 const baseURL = "http://192.168.1.53:57016/"; // feriados";
