@@ -20,29 +20,9 @@
 
 ### Front
 
-tree structure
-.
+## TODO:
 
-├── package.json
-├── public
-│   ├── favicon.ico
-│   ├── index.html
-│   ├── logo192.png
-│   ├── logo512.png
-│   ├── manifest.json
-│   └── robots.txt
-├── README.md
-├── RECREATE.md
-├── src
-│   ├── App.css
-│   ├── App.js
-│   ├── App.test.js
-│   ├── components
-│   │   ├── Feriado.component.js
-│   │   └── Feriados.component.js
-│   ├── index.css
-│   ├── index.js
-│   ├── serviceWorker.js
-│   └── setupTests.js
-└── yarn.lock
+// FIXME: move to ".env"
+const baseURL = "http://192.168.1.53:57016/"; // feriados";
+
 
