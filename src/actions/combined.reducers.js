@@ -1,6 +1,7 @@
-const { combineReducers } = require('redux');
-const { feriadosReducer } = require('./feriados.reducer');
-// import { combineReducers } from 'redux';
+// const { combineReducers } = require('redux');
+import { combineReducers } from 'redux';
+// const { feriadosReducer } = require('./feriados.reducer');
+import { feriadosReducer } from './feriados.reducer';
 
 
 export const reducers=

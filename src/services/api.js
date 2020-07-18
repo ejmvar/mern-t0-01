@@ -1,7 +1,21 @@
-import { getAll } from '../actions/feriados.actions';
+// import { getAll } from '../actions/feriados.actions';
 
-// const { default: Axios } = require('axios');
-const { axios } = require('axios');
+import axios from 'axios';
+
+//failDESTRUCTURE
+// import { Axios: axios } from 'axios';
+
+/// WORKS
+// const { default: axios } = require('axios');
+
+//getUNDEF: 
+// import Axios from 'axios';
+// import { axios } from 'axios';
+// const { Axios: axios } =require( 'axios');
+
+//ERROR: const { default: Axios } = require('axios');
+//ERROR: const { axios } = require('axios');
+//ERROR: const {Axios: axios } = require('axios');
 
 // FIXME: move to ".env"
 const URL_BASE = "http://192.168.1.53:57016";
@@ -12,6 +26,7 @@ const URL_UpdOne = "/feriados/"; // "/5f123f2ea7a9b244bb5c40bd";
 
 export default {
   feriadosAPI(url = URL_BASE) {
+    console.log("feriadosAPI");
     return ({
       getAll: () => axios.get(url + URL_GetAll),
       getOne: (id) => axios.get(url + URL_GetOne + id),

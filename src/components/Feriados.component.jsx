@@ -12,7 +12,7 @@ import React from 'react';
 
 // export default Feriados;
 
-const FeriadosList = (par) => {
+const FeriadosList = (props) => {
   return (
     <div>
       Lista de Feriados FeriadosList

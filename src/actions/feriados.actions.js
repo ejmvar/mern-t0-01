@@ -17,9 +17,9 @@ export const ACTION_TYPES = {
 
 export const getAll = () => dispatch => {
   // effects
-  api.feriadosAPI.getAll()
+  api.feriadosAPI().getAll()
     .then((res) => {
-
+      console.log("Actions res:", res);
       dispatch({
         type: ACTION_TYPES.GET_ALL,
         payload: res.data
