@@ -4,6 +4,8 @@
 //   payload: []
 // };
 
+import api from '../services/api';
+
 export const ACTION_TYPES = {
   CREATE: "CREATE", // NOTE: not used
   UPDATE: "UPDATE",
@@ -13,17 +15,23 @@ export const ACTION_TYPES = {
   PRELOAD: "PRELOAD", // NOTE: Only for 1st time setup
 };
 
-// export const getAll=()=>{
-//   return(dispatch=>{
-
-//   })
-// }
-
-
 export const getAll = () => dispatch => {
-  dispatch({
-    type: ACTION_TYPES.GET_ALL,
-    payload: []
-  })
+  // effects
+  api.feriadosAPI.getAll()
+    .then((res) => {
+
+      dispatch({
+        type: ACTION_TYPES.GET_ALL,
+        payload: res.data
+      })
+    }).catch((err) => {
+      const msg = "Feriados API GetALL:" + JSON.stringify(err);
+      console.error(msg);
+    });
+
+
+
+
+
 
 }
