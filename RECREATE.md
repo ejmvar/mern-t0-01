@@ -5,6 +5,7 @@
 ``` sh
 app="t00-01"
 npx create-react-app ${app}
+cd ${app}
 
 yarn add redux react-redux redux-thunk
 yarn add axios

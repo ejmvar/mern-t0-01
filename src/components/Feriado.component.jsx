@@ -15,7 +15,7 @@ const FeriadosItem = (props) => {
   // const [x, setX] = useState(0); // NOTE: init STATE value
   // setX(5); // NOTE: set STATE value
   useEffect(() => {
-    props.getAllFeriados();
+    props.getAllFeriados()
   }
     // , [] // NOTE: if empty(not included), implies "didMount"
     // , [x] // NOTE: on "x" changes, invoke: // (kind of observer, I think)
@@ -27,13 +27,13 @@ const FeriadosItem = (props) => {
 };
 
 // const mapStateToProps = (state, ownProps) => {
-const mapStateToProps = (state) => {
-  return {
+const mapStateToProps = (state) => ({
+  // return {
     // NOTE: return property "feriadosList" from Feriados state inside combined state
     feriadosList: state.feriadosReducer.list
     // feriadosList: state.FeriadosItem
-  };
-};
+  // };
+});
 const mapActionsToProps = {
   getAllFeriados: actions.getAll
 };
