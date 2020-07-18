@@ -8,3 +8,7 @@ npx create-react-app ${app}
 
 yarn add redux react-redux redux-thunk
 ```
+
+## Tutorial
+
+https://www.youtube.com/watch?v=HuXBuXf52vA&t=3218s
